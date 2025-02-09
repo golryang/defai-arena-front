@@ -93,7 +93,7 @@ const Page = () => {
 
   return (
     <div className="w-full h-screen bg-white">
-      <div className="w-full h-full px-28 py-20">
+      <div className="w-full h-full p-8 lg:px-24 lg:py-20"> 
         {/* Tab Header */}
         <div className="flex border-b border-gray-200 mb-12">
           <button
@@ -178,9 +178,10 @@ const Page = () => {
               rowHeight={36} // 각 행의 높이
               domLayout="autoHeight" // 컨텐츠 높이에 맞춰 자동 조절
               headerHeight={40} // 헤더 높이 설정
-              getRowClass={(params) =>
-                (params.node?.rowIndex ?? 0) % 2 === 1 ? "odd-row" : ""
-              }
+              rowClassRules={{
+                "odd-row": (params) => (params.node?.rowIndex ?? 0) % 2 === 1,
+                "even-row": (params) => (params.node?.rowIndex ?? 0) % 2 === 0,
+              }}
             />
           </div>
         )}
