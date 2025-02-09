@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: 'https://defaiarena.fun',
     images: [
       {
-        url: 'https://example.com/og-image.jpg', //fix
+        url: 'https://raw.githubusercontent.com/guzus/defai-arena/main/assets/defai-arena.webp', 
       },
     ],
     type: 'website',
