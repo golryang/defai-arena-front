@@ -62,7 +62,7 @@ const Page = () => {
         {/* Select Date Range */}
         <div className="w-full flex flex-col gap-y-6 lg:gap-y-0 lg:gap-x-6 mb-[48px]">
           <span className="text-[18px] font-bold">Select Date Range</span>
-          <div className="flex gap-x-2">
+          <div className="flex gap-x-6">
             <input 
               type="date" 
               placeholder="InputStart Date"

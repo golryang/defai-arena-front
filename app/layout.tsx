@@ -15,6 +15,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Defai Arena",
   description: "Open platform for crowdsourced LLM benchmarking tailored for DeFAI applications",
+  openGraph: {
+    title: 'Defai Arena',
+    description: 'Open platform for crowdsourced LLM benchmarking tailored for DeFAI applications',
+    url: 'https://defaiarena.fun',
+    images: [
+      {
+        url: 'https://example.com/og-image.jpg', //fix
+      },
+    ],
+    type: 'website',
+    locale: 'en_US',
+  },
 };
 
 export default function RootLayout({
