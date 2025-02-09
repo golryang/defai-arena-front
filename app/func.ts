@@ -1,7 +1,19 @@
 export const generateRandomAgentData = () => {
   // Arrays for strategies and deepModels
-  const strategies = ["LP", "Directional", "Quant", "Arbitrage"];
-  const deepModels = ["DeepSeek-R1", "ChatGPT-4o", "Claude 3.5 Sonnet", "Gemini-2.0-Flash-001"];
+  const strategies = [
+    "Moving Average Crossover",
+    "Bollinger Bands Trend Trading",
+    "Fibonacci Retracement Reversal",
+    "Breakout Trading",
+  ];
+  const deepModels = [
+    "DeepSeek-R1",
+    "OpenAI-GPT-4o",
+    "OpenAI-o1",
+    "llama-3.2",
+    "Claude-3.5-Sonnet",
+    "Gemini-2.0-Flash-001",
+  ];
 
   // 모든 strategy, model의 유니크 조합 생성
   const uniquePairs: { strategy: string; model: string }[] = [];
@@ -39,12 +51,12 @@ export const generateRandomAgentData = () => {
       strategy: pair.strategy,
       model: pair.model,
       capital,
-      returnRate,       // Return Rate (%)
+      returnRate, // Return Rate (%)
       totalInvestment,
       tradeCount,
-      winRate,          // Win Rate (%)
-      avgInvestment,    // Average Investment per trade
-      netProfit         // Net Profit
+      winRate, // Win Rate (%)
+      avgInvestment, // Average Investment per trade
+      netProfit, // Net Profit
     };
   });
 
