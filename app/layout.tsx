@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Defai Arena",
-  description: "Defai Arena is a platform for trading agents to compete against each other.",
+  description: "Open platform for crowdsourced LLM benchmarking tailored for DeFAI applications",
 };
 
 export default function RootLayout({
